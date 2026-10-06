@@ -28,7 +28,7 @@ async function loadData(){
 function playerCard(p){
   const photo=p.img?'<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'"><div class="fallbackNo" style="display:none">'+fallbackMark(p)+'</div>':'<div class="fallbackNo">'+fallbackMark(p)+'</div>';
   const sub=p.tier?(esc(p.tier)+' · '+esc(p.era||p.position)):(esc(p.position)+' · '+esc(p.nation));
-  const assistText=p.tier?(p.assists==null?"الصناعة: غير موثقة":"الصناعة: "+esc(p.assists)):"الصناعة: "+stat(p.assists);
+  const assistText=p.tier?((p.assistRecords&&p.assistRecords.length)?"الصناعة: سجل موسمي موثق":(p.assists==null?"الصناعة: غير موثقة":"الصناعة: "+esc(p.assists))):"الصناعة: "+stat(p.assists);
   return '<button class="playerCard" data-player="'+esc(p.id)+'"><div class="photo"><span class="shirtNo">'+fallbackMark(p)+'</span>'+photo+'</div><div class="caption"><strong>'+esc(p.name)+'</strong><small>'+sub+'</small><small class="assistLine">🎯 '+assistText+'</small></div></button>';
 }
 function renderFeatured(){
@@ -118,12 +118,14 @@ function openPlayer(id){
   const p=findPlayer(id); if(!p)return;
   const photo=p.img?'<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'">':'<div class="fallbackNo">'+fallbackMark(p)+'</div>';
   const isLegend=!!p.tier;
+  const hasAssistRecords=Array.isArray(p.assistRecords)&&p.assistRecords.length>0;
   const stats=isLegend
-    ?'<div class="detailStats"><div><b>'+esc(p.tier)+'</b><small>التصنيف</small></div><div><b>'+esc(p.era||"—")+'</b><small>الحقبة</small></div><div><b>'+esc(p.position)+'</b><small>المركز</small></div><div><b>'+(p.assists==null?"غير موثق":esc(p.assists))+'</b><small>صناعة أهداف</small></div></div>'
+    ?'<div class="detailStats"><div><b>'+esc(p.tier)+'</b><small>التصنيف</small></div><div><b>'+esc(p.era||"—")+'</b><small>الحقبة</small></div><div><b>'+esc(p.position)+'</b><small>المركز</small></div><div><b>'+(hasAssistRecords?"موثق موسميًا":(p.assists==null?"غير موثق":esc(p.assists)))+'</b><small>صناعة أهداف</small></div></div>'
     :'<div class="detailStats"><div><b>'+stat(p.matches)+'</b><small>مباراة</small></div><div><b>'+stat(p.goals)+'</b><small>هدف</small></div><div><b>'+stat(p.assists)+'</b><small>صناعة</small></div></div>';
+  const assistHistory=hasAssistRecords?'<div class="assistHistory"><strong>سجل صناعة الأهداف الموثق</strong>'+p.assistRecords.map(function(r){return '<div class="assistRecord"><span>'+esc(r.season)+' · '+esc(r.scope)+'</span><b>'+esc(r.assists)+' صناعة</b></div>'}).join("")+'</div>':'';
   const career=seasons.filter(function(s){return (s.stars||[]).includes(p.id)});
   const careerHtml=career.length?'<div class="seasonStars"><strong>في أرشيف المواسم</strong><div class="starChips">'+career.map(function(s){return '<button data-season="'+esc(s.id)+'">'+esc(s.label)+'</button>'}).join("")+'</div></div>':'';
-  document.getElementById("playerDetail").innerHTML='<div class="detailTop"><div class="detailPhoto">'+photo+'</div><div class="detailText"><span class="pill dark">'+(isLegend?esc(p.tier):"#"+esc(p.no))+'</span><h2>'+esc(p.name)+'</h2><p>'+esc(p.position)+' · '+esc(p.nation)+'</p></div></div>'+stats+'<p class="detailNote">'+esc(p.note)+(isLegend?'<br><br>صناعة الأهداف للاعبين التاريخيين تُعرض فقط عندما نجد سجلًا موثقًا. كثير من مواسم الجيل القديم لم تكن تسجل التمريرات الحاسمة إحصائيًا، لذلك نكتب «غير موثق» بدل وضع صفر غير صحيح.':'<br><br>المباريات والأهداف والصناعة المعروضة تخص موسم 2026/27 وفق مصدر الإحصاءات المرتبط باللاعب.')+'</p>'+careerHtml+'<a class="linkBtn" href="'+esc(p.source)+'" target="_blank" rel="noopener">فتح المصدر ↗</a>';
+  document.getElementById("playerDetail").innerHTML='<div class="detailTop"><div class="detailPhoto">'+photo+'</div><div class="detailText"><span class="pill dark">'+(isLegend?esc(p.tier):"#"+esc(p.no))+'</span><h2>'+esc(p.name)+'</h2><p>'+esc(p.position)+' · '+esc(p.nation)+'</p></div></div>'+stats+'<p class="detailNote">'+esc(p.note)+(isLegend?'<br><br>صناعة الأهداف للاعبين التاريخيين تُعرض فقط عندما نجد سجلًا موثقًا. كثير من مواسم الجيل القديم لم تكن تسجل التمريرات الحاسمة إحصائيًا، لذلك نكتب «غير موثق» بدل وضع صفر غير صحيح.':'<br><br>المباريات والأهداف والصناعة المعروضة تخص موسم 2026/27 وفق مصدر الإحصاءات المرتبط باللاعب.')+'</p>'+assistHistory+careerHtml+'<a class="linkBtn" href="'+esc(p.source)+'" target="_blank" rel="noopener">فتح المصدر ↗</a>';
   document.getElementById("playerModal").classList.add("open");
   document.getElementById("playerModal").setAttribute("aria-hidden","false");
 }
