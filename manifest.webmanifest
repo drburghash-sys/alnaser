@@ -1,0 +1,11 @@
+{
+  "name":"نصر هَب - NASSR HUB",
+  "short_name":"نصر هَب",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#041126",
+  "theme_color":"#082c68",
+  "lang":"ar",
+  "dir":"rtl",
+  "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
