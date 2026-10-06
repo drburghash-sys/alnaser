@@ -28,7 +28,8 @@ async function loadData(){
 function playerCard(p){
   const photo=p.img?'<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'"><div class="fallbackNo" style="display:none">'+fallbackMark(p)+'</div>':'<div class="fallbackNo">'+fallbackMark(p)+'</div>';
   const sub=p.tier?(esc(p.tier)+' · '+esc(p.era||p.position)):(esc(p.position)+' · '+esc(p.nation));
-  return '<button class="playerCard" data-player="'+esc(p.id)+'"><div class="photo"><span class="shirtNo">'+fallbackMark(p)+'</span>'+photo+'</div><div class="caption"><strong>'+esc(p.name)+'</strong><small>'+sub+'</small></div></button>';
+  const assistText=p.tier?(p.assists==null?"الصناعة: غير موثقة":"الصناعة: "+esc(p.assists)):"الصناعة: "+stat(p.assists);
+  return '<button class="playerCard" data-player="'+esc(p.id)+'"><div class="photo"><span class="shirtNo">'+fallbackMark(p)+'</span>'+photo+'</div><div class="caption"><strong>'+esc(p.name)+'</strong><small>'+sub+'</small><small class="assistLine">🎯 '+assistText+'</small></div></button>';
 }
 function renderFeatured(){
   const ids=["ronaldo","felix","mane","angelo","coman"];
