@@ -54,7 +54,12 @@ function renderSquad(filter){
   document.getElementById("playersGrid").innerHTML=list.length?list.map(playerCard).join(""):'<div class="empty">لا توجد عناصر.</div>';
 }
 function renderTrophies(){
-  document.getElementById("trophyList").innerHTML=trophies.map(function(t){return '<article class="trophyItem"><div class="cupCount"><b>'+t.count+'</b></div><div><strong>'+esc(t.title)+'</strong><p>'+esc(t.seasons)+'<br>'+esc(t.note)+'</p><a href="'+esc(t.source)+'" target="_blank" rel="noopener">المصدر ↗</a></div></article>'}).join("");
+  document.getElementById("trophyList").innerHTML=trophies.map(function(t){
+    const shown=t.official?t.count:"—";
+    const sourceBadge=t.official?"موقع النصر الرسمي":"مرجع ثانوي";
+    const details=t.seasons?esc(t.seasons)+"<br>":"";
+    return '<article class="trophyItem"><div class="cupCount"><b>'+shown+'</b></div><div><strong>'+esc(t.title)+'</strong><p>'+details+esc(t.note)+'</p><span class="seasonStatus">'+sourceBadge+'</span> <a href="'+esc(t.source)+'" target="_blank" rel="noopener">'+esc(t.sourceName||"المصدر")+' ↗</a></div></article>';
+  }).join("");
 }
 function renderFixtures(){
   document.getElementById("fixtures").innerHTML=fixtures.map(function(f){return '<div class="fixture"><div class="when"><b>'+esc(f.date)+'</b><small>'+esc(f.round)+'</small></div><div class="teams"><strong>'+esc(f.home)+' × '+esc(f.away)+'</strong><small>'+esc(f.where)+'</small></div><div class="tag">'+esc(f.state)+'</div></div>'}).join("");
@@ -92,7 +97,7 @@ function openSeason(id){
   document.getElementById("seasonModal").setAttribute("aria-hidden","false");
 }
 function renderSources(){
-  const links=[["صفحة النصر في رابطة الدوري",SOURCES.splTeam],["المباريات والنتائج",SOURCES.splFixtures],["مركز إحصائيات الدوري",SOURCES.splStats],["سجل السوبر السعودي",SOURCES.saffSuper],["تاريخ النصر في الاتحاد الآسيوي",SOURCES.afcHistory],["سعوديبيديا: نادي النصر",SOURCES.saudipedia]];
+  const links=[["المصدر الأول: موقع نادي النصر الرسمي","https://alnassr.sa/AROYA"],["صفحة النصر في رابطة الدوري",SOURCES.splTeam],["المباريات والنتائج",SOURCES.splFixtures],["مركز إحصائيات الدوري",SOURCES.splStats],["سجل السوبر السعودي",SOURCES.saffSuper],["تاريخ النصر في الاتحاد الآسيوي",SOURCES.afcHistory],["سعوديبيديا: نادي النصر",SOURCES.saudipedia]];
   document.getElementById("sourceLinks").innerHTML=links.map(function(x){return '<a href="'+x[1]+'" target="_blank" rel="noopener">'+esc(x[0])+' ↗</a>'}).join("");
 }
 function renderAll(){
