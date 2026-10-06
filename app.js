@@ -30,7 +30,11 @@ function playerCard(p){
   const sub=p.tier?(esc(p.tier)+' · '+esc(p.era||p.position)):(esc(p.position)+' · '+esc(p.nation));
   return '<button class="playerCard" data-player="'+esc(p.id)+'"><div class="photo"><span class="shirtNo">'+fallbackMark(p)+'</span>'+photo+'</div><div class="caption"><strong>'+esc(p.name)+'</strong><small>'+sub+'</small></div></button>';
 }
-function renderFeatured(){document.getElementById("featured").innerHTML=players.slice(0,5).map(playerCard).join("")}
+function renderFeatured(){
+  const ids=["ronaldo","felix","mane","angelo","coman"];
+  const list=ids.map(function(id){return players.find(function(p){return p.id===id})}).filter(Boolean);
+  document.getElementById("featured").innerHTML=list.map(playerCard).join("");
+}
 function historicalForeigners(){
   const map=new Map();
   foreigners.concat(legends.filter(function(p){return p.nation&&p.nation!=="السعودية"})).forEach(function(p){if(!map.has(p.id))map.set(p.id,p)});
@@ -55,7 +59,7 @@ function renderSquad(filter){
 }
 function renderTrophies(){
   document.getElementById("trophyList").innerHTML=trophies.map(function(t){
-    const shown=t.official?t.count:"—";
+    const shown=t.count!=null?t.count:(t.secondaryCount!=null?t.secondaryCount:"—");
     const sourceBadge=t.official?"موقع النصر الرسمي":"مرجع ثانوي";
     const details=t.seasons?esc(t.seasons)+"<br>":"";
     return '<article class="trophyItem"><div class="cupCount"><b>'+shown+'</b></div><div><strong>'+esc(t.title)+'</strong><p>'+details+esc(t.note)+'</p><span class="seasonStatus">'+sourceBadge+'</span> <a href="'+esc(t.source)+'" target="_blank" rel="noopener">'+esc(t.sourceName||"المصدر")+' ↗</a></div></article>';
@@ -114,11 +118,11 @@ function openPlayer(id){
   const photo=p.img?'<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'">':'<div class="fallbackNo">'+fallbackMark(p)+'</div>';
   const isLegend=!!p.tier;
   const stats=isLegend
-    ?'<div class="detailStats"><div><b>'+esc(p.tier)+'</b><small>التصنيف</small></div><div><b>'+esc(p.era||"—")+'</b><small>الحقبة</small></div><div><b>'+esc(p.position)+'</b><small>المركز</small></div></div>'
+    ?'<div class="detailStats"><div><b>'+esc(p.tier)+'</b><small>التصنيف</small></div><div><b>'+esc(p.era||"—")+'</b><small>الحقبة</small></div><div><b>'+esc(p.position)+'</b><small>المركز</small></div><div><b>'+(p.assists==null?"غير موثق":esc(p.assists))+'</b><small>صناعة أهداف</small></div></div>'
     :'<div class="detailStats"><div><b>'+stat(p.matches)+'</b><small>مباراة</small></div><div><b>'+stat(p.goals)+'</b><small>هدف</small></div><div><b>'+stat(p.assists)+'</b><small>صناعة</small></div></div>';
   const career=seasons.filter(function(s){return (s.stars||[]).includes(p.id)});
   const careerHtml=career.length?'<div class="seasonStars"><strong>في أرشيف المواسم</strong><div class="starChips">'+career.map(function(s){return '<button data-season="'+esc(s.id)+'">'+esc(s.label)+'</button>'}).join("")+'</div></div>':'';
-  document.getElementById("playerDetail").innerHTML='<div class="detailTop"><div class="detailPhoto">'+photo+'</div><div class="detailText"><span class="pill dark">'+(isLegend?esc(p.tier):"#"+esc(p.no))+'</span><h2>'+esc(p.name)+'</h2><p>'+esc(p.position)+' · '+esc(p.nation)+'</p></div></div>'+stats+'<p class="detailNote">'+esc(p.note)+(isLegend?'<br><br>هذا القسم يفرّق بين «أسطورة»، «رمز تاريخي»، «جيل العالمية» و«نجم حقبة» حتى لا نضع كل اللاعبين في تصنيف واحد.':'<br><br>الأرقام المعروضة تخص دوري روشن 2026/27 عندما تتوفر بيانات موثقة. علامة — تعني أننا لم نثبت الرقم بعد، وليست صفرًا.')+'</p>'+careerHtml+'<a class="linkBtn" href="'+esc(p.source)+'" target="_blank" rel="noopener">فتح المصدر ↗</a>';
+  document.getElementById("playerDetail").innerHTML='<div class="detailTop"><div class="detailPhoto">'+photo+'</div><div class="detailText"><span class="pill dark">'+(isLegend?esc(p.tier):"#"+esc(p.no))+'</span><h2>'+esc(p.name)+'</h2><p>'+esc(p.position)+' · '+esc(p.nation)+'</p></div></div>'+stats+'<p class="detailNote">'+esc(p.note)+(isLegend?'<br><br>صناعة الأهداف للاعبين التاريخيين تُعرض فقط عندما نجد سجلًا موثقًا. كثير من مواسم الجيل القديم لم تكن تسجل التمريرات الحاسمة إحصائيًا، لذلك نكتب «غير موثق» بدل وضع صفر غير صحيح.':'<br><br>المباريات والأهداف والصناعة المعروضة تخص موسم 2026/27 وفق مصدر الإحصاءات المرتبط باللاعب.')+'</p>'+careerHtml+'<a class="linkBtn" href="'+esc(p.source)+'" target="_blank" rel="noopener">فتح المصدر ↗</a>';
   document.getElementById("playerModal").classList.add("open");
   document.getElementById("playerModal").setAttribute("aria-hidden","false");
 }
