@@ -8,20 +8,20 @@ const SOURCES={
   saudipedia:"https://saudipedia.com/نادي-النصر"
 };
 
-let players=[],legends=[],trophies=[],fixtures=[],history=[],seasons=[];
+let players=[],legends=[],foreigners=[],trophies=[],fixtures=[],history=[],seasons=[];
 
 function esc(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]})}
 function stat(v){return v==null?"—":v}
 function fallbackMark(p){return p.no&&p.no!=="—"?esc(p.no):"★"}
 
 async function loadData(){
-  const paths=["current-players","legends","trophies","fixtures","history","seasons"];
+  const paths=["current-players","legends","historical-foreigners","trophies","fixtures","history","seasons"];
   const rows=await Promise.all(paths.map(async function(name){
     const r=await fetch("./data/"+name+".json",{cache:"no-store"});
     if(!r.ok) throw new Error("تعذر تحميل "+name);
     return r.json();
   }));
-  [players,legends,trophies,fixtures,history,seasons]=rows;
+  [players,legends,foreigners,trophies,fixtures,history,seasons]=rows;
   renderAll();
 }
 
@@ -31,12 +31,23 @@ function playerCard(p){
   return '<button class="playerCard" data-player="'+esc(p.id)+'"><div class="photo"><span class="shirtNo">'+fallbackMark(p)+'</span>'+photo+'</div><div class="caption"><strong>'+esc(p.name)+'</strong><small>'+sub+'</small></div></button>';
 }
 function renderFeatured(){document.getElementById("featured").innerHTML=players.slice(0,5).map(playerCard).join("")}
+function historicalForeigners(){
+  const map=new Map();
+  foreigners.concat(legends.filter(function(p){return p.nation&&p.nation!=="السعودية"})).forEach(function(p){if(!map.has(p.id))map.set(p.id,p)});
+  return Array.from(map.values());
+}
 function renderSquad(filter){
-  let list=filter==="legend"?legends.slice():players.filter(function(p){return filter==="all"||p.pos===filter});
+  let list;
+  if(filter==="legend") list=legends.slice();
+  else if(filter==="foreign") list=historicalForeigners();
+  else list=players.filter(function(p){return filter==="all"||p.pos===filter});
   if(filter==="legend"){
     const order={"أسطورة":1,"رمز تاريخي":2,"جيل العالمية":3,"نجم تاريخي":4,"نجم حقبة المحترفين":5,"نجم عالمي سابق":6,"نجم حديث":7};
     list.sort(function(a,b){return (order[a.tier]||99)-(order[b.tier]||99)||a.name.localeCompare(b.name,"ar")});
     document.getElementById("playersMeta").textContent=legends.length+" اسمًا تاريخيًا";
+  }else if(filter==="foreign"){
+    list.sort(function(a,b){return String(a.era||"").localeCompare(String(b.era||""),"ar")});
+    document.getElementById("playersMeta").textContent=list.length+" أجنبيًا تاريخيًا في الأرشيف";
   }else{
     document.getElementById("playersMeta").textContent=players.length+" لاعبًا في القاعدة الحالية";
   }
@@ -92,7 +103,7 @@ function go(id){
   document.querySelectorAll(".bottom button").forEach(function(b){b.classList.toggle("active",b.dataset.go===id||(id==="season"&&b.dataset.go==="seasons"))});
   window.scrollTo({top:0,behavior:"smooth"});
 }
-function findPlayer(id){return players.concat(legends).find(function(p){return p.id===id})}
+function findPlayer(id){return players.concat(legends,foreigners).find(function(p){return p.id===id})}
 function openPlayer(id){
   const p=findPlayer(id); if(!p)return;
   const photo=p.img?'<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'">':'<div class="fallbackNo">'+fallbackMark(p)+'</div>';
@@ -110,7 +121,7 @@ function closeModal(id){const m=document.getElementById(id);m.classList.remove("
 function search(term){
   const q=term.trim().toLowerCase(); if(!q){go("home");return}
   const rows=[];
-  players.concat(legends).forEach(function(p){const txt=[p.name,p.no,p.position,p.nation,p.note,p.tier,p.era].join(" ").toLowerCase();if(txt.includes(q))rows.push({type:p.tier||"لاعب حالي",title:p.name,desc:(p.tier?((p.era||"")+" · "):("#"+p.no+" · "))+p.position,id:p.id})});
+  players.concat(legends,foreigners).forEach(function(p){const txt=[p.name,(p.aliases||[]).join(" "),p.no,p.position,p.nation,p.note,p.tier,p.era].join(" ").toLowerCase();if(txt.includes(q))rows.push({type:p.tier||"لاعب حالي",title:p.name,desc:(p.tier?((p.era||"")+" · "):("#"+p.no+" · "))+p.position,id:p.id})});
   trophies.forEach(function(t){const txt=[t.title,t.seasons,t.note].join(" ").toLowerCase();if(txt.includes(q))rows.push({type:"بطولة",title:t.title,desc:t.seasons})});
   history.forEach(function(h){const txt=[h.year,h.title,h.text].join(" ").toLowerCase();if(txt.includes(q))rows.push({type:"تاريخ",title:h.year+" · "+h.title,desc:h.text})});
   fixtures.forEach(function(f){const txt=[f.date,f.round,f.home,f.away,f.where].join(" ").toLowerCase();if(txt.includes(q))rows.push({type:"مباراة",title:f.home+" × "+f.away,desc:f.date+" · "+f.round})});
