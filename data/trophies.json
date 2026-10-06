@@ -1,51 +1,57 @@
 [
   {
-    "title": "الدوري السعودي الممتاز / المحترفين",
-    "count": 9,
-    "seasons": "1980، 1981، 1989، 1994، 1995، 2014، 2015، 2019، 2026",
-    "note": "تسعة ألقاب ضمن سجل الدوري الممتاز/المحترفين عند فصل الدوري التصنيفي 1974/75.",
-    "source": "https://assets.the-afc.com/migration/2/0/2019%20programme%20QF%20%28Japan%29.pdf"
+    "title": "بطولة الدوري",
+    "count": 17,
+    "countLabel": "17 مرة",
+    "seasons": "",
+    "note": "هذا هو الرقم الذي يعلنه نادي النصر في موقعه الرسمي.",
+    "source": "https://alnassr.sa/AROYA",
+    "sourceName": "موقع نادي النصر الرسمي",
+    "sourceType": "officialClub",
+    "official": true
   },
   {
-    "title": "الدوري التصنيفي",
-    "count": 1,
-    "seasons": "1974/75",
-    "note": "بطولة انتقالية لتصنيف أندية الدرجتين قبل انطلاق الدوري الممتاز المستمر؛ لذلك تفصلها الموسوعة عن ألقاب الدوري التسعة.",
-    "source": "https://en.wikipedia.org/wiki/1974%E2%80%9375_Saudi_Categorization_League"
+    "title": "البطولات الآسيوية",
+    "count": 2,
+    "countLabel": "بطولتان آسيويتان",
+    "seasons": "كأس الكؤوس الآسيوية 1998، السوبر الآسيوي 1998",
+    "note": "موقع نادي النصر الرسمي يذكر تحقيق بطولتين آسيويتين. أسماء البطولتين وتفاصيلهما تؤيدها مراجع الاتحاد الآسيوي.",
+    "source": "https://alnassr.sa/AROYA",
+    "sourceName": "موقع نادي النصر الرسمي",
+    "sourceType": "officialClub",
+    "official": true
   },
   {
     "title": "كأس الملك",
-    "count": 6,
+    "count": null,
+    "secondaryCount": 6,
     "seasons": "1974، 1976، 1981، 1986، 1987، 1990",
-    "note": "السجل التاريخي الوارد في دليل الاتحاد الآسيوي.",
-    "source": "https://assets.the-afc.com/migration/2/0/2019%20programme%20QF%20%28Japan%29.pdf"
+    "note": "التفاصيل محفوظة من مراجع ثانوية، لكن العدد لن يُعرض كرقم رسمي للنادي حتى نجد له توثيقًا صريحًا على موقع النصر.",
+    "source": "https://assets.the-afc.com/migration/2/0/2019%20programme%20QF%20%28Japan%29.pdf",
+    "sourceName": "مرجع ثانوي — AFC",
+    "sourceType": "secondary",
+    "official": false
   },
   {
     "title": "كأس السوبر السعودي",
-    "count": 2,
+    "count": null,
+    "secondaryCount": 2,
     "seasons": "2019، 2020",
-    "note": "توج النصر بنسختين متتاليتين.",
-    "source": "https://www.saff.com.sa/championship.php?id=55&season=all"
-  },
-  {
-    "title": "كأس الكؤوس الآسيوية",
-    "count": 1,
-    "seasons": "1997/98",
-    "note": "توج النصر بالبطولة الآسيوية.",
-    "source": "https://www.the-afc.com/en/club/fifa_club_world_cup/news/al_nassrs_unique_run_to_the_global_stage.html"
-  },
-  {
-    "title": "السوبر الآسيوي",
-    "count": 1,
-    "seasons": "1998",
-    "note": "التتويج الذي قاد إلى المشاركة العالمية.",
-    "source": "https://www.the-afc.com/en/club/fifa_club_world_cup/news/al_nassrs_unique_run_to_the_global_stage.html"
+    "note": "المواسم محفوظة من الاتحاد السعودي، لكن العداد الرسمي في التطبيق سيبقى معتمدًا على موقع النصر.",
+    "source": "https://www.saff.com.sa/championship.php?id=55&season=all",
+    "sourceName": "مرجع ثانوي — الاتحاد السعودي",
+    "sourceType": "secondary",
+    "official": false
   },
   {
     "title": "كأس الملك سلمان للأندية العربية",
-    "count": 1,
+    "count": null,
+    "secondaryCount": 1,
     "seasons": "2023",
-    "note": "بطولة عربية بارزة في الحقبة الحديثة.",
-    "source": "https://www.spl.com.sa/en/teams/al-nassr/index"
+    "note": "محفوظة في الأرشيف، ولا تدخل في أي عداد رسمي إلا وفق ما يورده موقع نادي النصر.",
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/index",
+    "sourceName": "مرجع ثانوي — رابطة الدوري",
+    "sourceType": "secondary",
+    "official": false
   }
 ]
