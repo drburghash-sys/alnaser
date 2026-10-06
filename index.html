@@ -56,11 +56,18 @@
   <section class="block">
     <div class="heading"><div><small>الخزانة</small><h3>بطولات موثقة</h3></div><button class="linkBtn" data-go="trophies">التفاصيل</button></div>
     <div class="trophySummary">
-      <div><b>9</b><span>الدوري السعودي</span></div>
+      <div><b>9</b><span>دوري ممتاز / محترفين</span></div>
+      <div><b>+1</b><span>الدوري التصنيفي 1974/75</span></div>
       <div><b>6</b><span>كأس الملك</span></div>
-      <div><b>2</b><span>السوبر السعودي</span></div>
       <div><b>2</b><span>ألقاب آسيوية تاريخية</span></div>
     </div>
+  </section>
+
+  <section class="block">
+    <button class="archiveCallout" data-go="seasons">
+      <div><small>من 1974/75 إلى اليوم</small><strong>أرشيف المواسم</strong><span>بطولات، مشوار آسيوي، نجوم كل حقبة ومصادر التوثيق</span></div>
+      <b>‹</b>
+    </button>
   </section>
 
   <section class="block">
@@ -81,6 +88,18 @@
   <div class="pageHead"><div><small>التاريخ الذهبي</small><h2>خزانة البطولات</h2></div><span>موثقة حسب المسابقة</span></div>
   <div id="trophyList" class="trophyList"></div>
   <div class="sourceBox warn">لا نستخدم رقمًا إجماليًا واحدًا للبطولات غير الموحّدة في طريقة الاحتساب. المعروض هنا بطولات ذات تعريف واضح ومصدر محدد.</div>
+</section>
+
+<section id="seasons" class="screen">
+  <div class="pageHead"><div><small>أرشيف النادي</small><h2>المواسم</h2></div><span id="seasonArchiveMeta">موثق بالمصادر</span></div>
+  <div class="segmented" id="seasonFilter">
+    <button class="active" data-season-filter="all">الكل</button>
+    <button data-season-filter="title">مواسم البطولات</button>
+    <button data-season-filter="asia">المواسم الآسيوية</button>
+    <button data-season-filter="modern">من 2010</button>
+  </div>
+  <div id="seasonArchive" class="seasonArchive"></div>
+  <button class="historyLink" data-go="history">مشاهدة الخط الزمني الكامل للنادي ←</button>
 </section>
 
 <section id="season" class="screen">
@@ -111,7 +130,7 @@
   <button class="active" data-go="home"><b>⌂</b><span>الرئيسية</span></button>
   <button data-go="squad"><b>♟</b><span>اللاعبون</span></button>
   <button data-go="trophies"><b>♛</b><span>البطولات</span></button>
-  <button data-go="season"><b>▥</b><span>الموسم</span></button>
+  <button data-go="seasons"><b>▥</b><span>المواسم</span></button>
   <button data-go="history"><b>◷</b><span>التاريخ</span></button>
 </nav>
 </div>
@@ -121,6 +140,14 @@
   <article class="modalCard">
     <button class="closeBtn" data-close-modal>×</button>
     <div id="playerDetail"></div>
+  </article>
+</div>
+
+<div class="modal" id="seasonModal" aria-hidden="true">
+  <div class="modalShade" data-close-season></div>
+  <article class="modalCard">
+    <button class="closeBtn" data-close-season>×</button>
+    <div id="seasonDetail"></div>
   </article>
 </div>
 
