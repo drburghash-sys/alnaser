@@ -122,7 +122,11 @@
     "stars": [
       "majed",
       "salem-marwan",
-      "youssef-khamis"
+      "youssef-khamis",
+      "hamadi-agrebi",
+      "mokhtar-dhouieb",
+      "raouf-ben-aziza",
+      "lino-brazil"
     ],
     "status": "موثق",
     "note": "لقب 1980 وارد في أدلة الاتحاد الآسيوي.",
@@ -149,7 +153,10 @@
     "stars": [
       "majed",
       "muhaysin",
-      "youssef-khamis"
+      "youssef-khamis",
+      "ailton-lira",
+      "toninho-old",
+      "raouf-ben-aziza"
     ],
     "status": "موثق",
     "note": "موسم ارتبط بالدوري وكأس الملك في السجل التاريخي.",
@@ -170,7 +177,10 @@
     "leaguePosition": "4",
     "honours": [],
     "continental": "—",
-    "stars": [],
+    "stars": [
+      "ailton-lira",
+      "raouf-ben-aziza"
+    ],
     "status": "أرشيف أولي",
     "note": "أنهى النصر الموسم في المركز 4 برصيد 27 نقطة.",
     "sources": [
@@ -423,7 +433,9 @@
       "majed",
       "muhaysin",
       "herafy",
-      "saleh-mutlaq"
+      "saleh-mutlaq",
+      "hysen-zmijani",
+      "ohene-kennedy"
     ],
     "status": "موثق",
     "note": "بداية لقبين متتاليين في التسعينات.",
@@ -450,7 +462,10 @@
       "majed",
       "muhaysin",
       "herafy",
-      "fahad-masaud"
+      "fahad-masaud",
+      "hysen-zmijani",
+      "ohene-kennedy",
+      "alexander-freeman"
     ],
     "status": "موثق",
     "note": "جمع الموسم بين لقب محلي بارز وبلوغ النهائي القاري.",
@@ -471,7 +486,10 @@
     "leaguePosition": "4",
     "honours": [],
     "continental": "—",
-    "stars": [],
+    "stars": [
+      "ohene-kennedy",
+      "youssouf-fofana"
+    ],
     "status": "أرشيف أولي",
     "note": "أنهى النصر الموسم في المركز 4 برصيد 33 نقطة.",
     "sources": [
@@ -491,7 +509,10 @@
     "leaguePosition": "3",
     "honours": [],
     "continental": "—",
-    "stars": [],
+    "stars": [
+      "hysen-zmijani",
+      "ohene-kennedy"
+    ],
     "status": "أرشيف أولي",
     "note": "أنهى النصر الموسم في المركز 3 برصيد 39 نقطة.",
     "sources": [
@@ -518,7 +539,9 @@
       "majed",
       "herafy",
       "muhaysin",
-      "stoichkov"
+      "stoichkov",
+      "victor-diany",
+      "mamadou-sow"
     ],
     "status": "موثق",
     "note": "أهم موسم قاري في تاريخ النادي؛ قاد لاحقًا إلى بطاقة كأس العالم للأندية.",
@@ -607,7 +630,10 @@
     "leaguePosition": "3",
     "honours": [],
     "continental": "—",
-    "stars": [],
+    "stars": [
+      "julio-cesar-baldivieso",
+      "fadel-keita"
+    ],
     "status": "أرشيف أولي",
     "note": "أنهى النصر الموسم في المركز 3 برصيد 44 نقطة.",
     "sources": [
@@ -627,7 +653,11 @@
     "leaguePosition": "4",
     "honours": [],
     "continental": "—",
-    "stars": [],
+    "stars": [
+      "julio-cesar-baldivieso",
+      "rock-bouskab",
+      "carlos-tenorio"
+    ],
     "status": "أرشيف أولي",
     "note": "أنهى النصر الموسم في المركز 4 برصيد 42 نقطة.",
     "sources": [
