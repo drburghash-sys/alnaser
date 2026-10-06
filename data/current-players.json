@@ -385,11 +385,11 @@
     "position": "جناح",
     "nation": "السعودية",
     "img": "https://media.zid.store/502314bf-8ec9-4016-b379-96b335ef94c9/96d5fabe-ee70-403e-bc81-1e9cefe37709.png",
-    "matches": null,
-    "goals": null,
-    "assists": null,
-    "note": "ضمن لاعبي النادي؛ لم يظهر له رقم حديث في مصدر الإحصاءات الذي اعتمدناه لهذه الدفعة. الصورة من متجر النصر الرسمي.",
-    "source": "https://store.alnassr.sa/ar-om/categories/1332499/ghareeb"
+    "matches": 0,
+    "goals": 0,
+    "assists": 0,
+    "note": "ضمن لاعبي النادي في موسم 2026/27. الصورة من متجر النصر الرسمي.",
+    "source": "https://scoutingstats.ai/clubs/2506/al-nassr/squad?league_id=1085&season_id=28424"
   },
   {
     "id": "haqawi",
