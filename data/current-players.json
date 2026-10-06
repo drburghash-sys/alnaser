@@ -1,19 +1,5 @@
 [
   {
-    "id": "sultan-almas",
-    "name": "سلطان الماس",
-    "no": "66",
-    "pos": "GK",
-    "position": "حارس مرمى",
-    "nation": "السعودية",
-    "img": "",
-    "matches": 0,
-    "goals": 0,
-    "assists": 0,
-    "note": "ضمن قائمة الفريق الأول 2026/27.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
-  },
-  {
     "id": "aqidi",
     "name": "نواف العقيدي",
     "no": "1",
@@ -56,6 +42,34 @@
     "note": "حارس شاب ضمن قائمة الفريق الأول.",
     "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
     "statsSource": "Goal 2026/27 + SPL player profiles"
+  },
+  {
+    "id": "sultan-almas",
+    "name": "سلطان الماس",
+    "no": "66",
+    "pos": "GK",
+    "position": "حارس مرمى",
+    "nation": "السعودية",
+    "img": "",
+    "matches": 0,
+    "goals": 0,
+    "assists": 0,
+    "note": "ضمن قائمة الفريق الأول 2026/27.",
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+  },
+  {
+    "id": "mubarak-buainain",
+    "name": "مبارك البوعينين",
+    "no": "—",
+    "pos": "GK",
+    "position": "حارس مرمى",
+    "nation": "السعودية",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/189dbb7556594f0aacddb7fb3cd4fb63_middle.webp",
+    "matches": 0,
+    "goals": 0,
+    "assists": 0,
+    "note": "حارس سعودي ضمن قائمة الفريق الأول الرسمية في رابطة الدوري 2026/27.",
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/squad"
   },
   {
     "id": "ghannam",
@@ -167,12 +181,12 @@
     "pos": "DF",
     "position": "مدافع",
     "nation": "السعودية",
-    "img": "",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/9e6f720f32694b35a3a371263da1129f_middle.webp",
     "matches": 1,
     "goals": 0,
     "assists": 0,
     "note": "ضمن قائمة الفريق الأول.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "source": "https://www.spl.com.sa/en/players/majed-qasheesh",
     "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
@@ -205,8 +219,8 @@
     "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
-    "id": "asser-hawsawi",
-    "name": "عسير هوساوي",
+    "id": "abdulrahman-sufyani",
+    "name": "عبدالرحمن حسن السفياني",
     "no": "—",
     "pos": "DF",
     "position": "مدافع",
@@ -215,8 +229,8 @@
     "matches": 0,
     "goals": 0,
     "assists": 0,
-    "note": "ضمن قائمة الفريق الأول.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "note": "مدافع سعودي شاب مدرج في قائمة النصر الرسمية في رابطة الدوري، وموثق أيضًا ضمن فرق النصر السنية في SAFF+.",
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/squad"
   },
   {
     "id": "hayder",
