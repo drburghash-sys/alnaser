@@ -1,0 +1,44 @@
+[
+  {
+    "title": "الدوري السعودي",
+    "count": 9,
+    "seasons": "1980، 1981، 1989، 1994، 1995، 2014، 2015، 2019، 2026",
+    "note": "ثمانية ألقاب موثقة حتى 2019، ثم لقب 2025/26.",
+    "source": "https://assets.the-afc.com/migration/2/0/2019%20programme%20QF%20%28Japan%29.pdf"
+  },
+  {
+    "title": "كأس الملك",
+    "count": 6,
+    "seasons": "1974، 1976، 1981، 1986، 1987، 1990",
+    "note": "السجل التاريخي الوارد في دليل الاتحاد الآسيوي.",
+    "source": "https://assets.the-afc.com/migration/2/0/2019%20programme%20QF%20%28Japan%29.pdf"
+  },
+  {
+    "title": "كأس السوبر السعودي",
+    "count": 2,
+    "seasons": "2019، 2020",
+    "note": "توج النصر بنسختين متتاليتين.",
+    "source": "https://www.saff.com.sa/championship.php?id=55&season=all"
+  },
+  {
+    "title": "كأس الكؤوس الآسيوية",
+    "count": 1,
+    "seasons": "1997/98",
+    "note": "توج النصر بالبطولة الآسيوية.",
+    "source": "https://www.the-afc.com/en/club/fifa_club_world_cup/news/al_nassrs_unique_run_to_the_global_stage.html"
+  },
+  {
+    "title": "السوبر الآسيوي",
+    "count": 1,
+    "seasons": "1998",
+    "note": "التتويج الذي قاد إلى المشاركة العالمية.",
+    "source": "https://www.the-afc.com/en/club/fifa_club_world_cup/news/al_nassrs_unique_run_to_the_global_stage.html"
+  },
+  {
+    "title": "كأس الملك سلمان للأندية العربية",
+    "count": 1,
+    "seasons": "2023",
+    "note": "بطولة عربية بارزة في الحقبة الحديثة.",
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/index"
+  }
+]
