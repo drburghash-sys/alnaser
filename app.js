@@ -8,20 +8,20 @@ const SOURCES={
   saudipedia:"https://saudipedia.com/نادي-النصر"
 };
 
-let players=[],legends=[],trophies=[],fixtures=[],history=[];
+let players=[],legends=[],trophies=[],fixtures=[],history=[],seasons=[];
 
 function esc(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]})}
 function stat(v){return v==null?"—":v}
 function fallbackMark(p){return p.no&&p.no!=="—"?esc(p.no):"★"}
 
 async function loadData(){
-  const paths=["current-players","legends","trophies","fixtures","history"];
+  const paths=["current-players","legends","trophies","fixtures","history","seasons"];
   const rows=await Promise.all(paths.map(async function(name){
     const r=await fetch("./data/"+name+".json",{cache:"no-store"});
     if(!r.ok) throw new Error("تعذر تحميل "+name);
     return r.json();
   }));
-  [players,legends,trophies,fixtures,history]=rows;
+  [players,legends,trophies,fixtures,history,seasons]=rows;
   renderAll();
 }
 
@@ -53,16 +53,43 @@ function renderLeaders(){
   document.getElementById("statLeaders").innerHTML=list.map(function(p){return '<button class="leader" data-player="'+esc(p.id)+'"><div class="miniNo">'+fallbackMark(p)+'</div><div><strong>'+esc(p.name)+'</strong><small>'+esc(p.position)+'</small></div><div class="metric"><b>'+stat(p.matches)+'</b><small>مباراة</small></div><div class="metric"><b>'+stat(p.goals)+'</b><small>هدف</small></div><div class="metric"><b>'+stat(p.assists)+'</b><small>صناعة</small></div></button>'}).join("");
 }
 function renderHistory(){document.getElementById("historyList").innerHTML=history.map(function(h){return '<article class="event"><b>'+esc(h.year)+'</b><strong>'+esc(h.title)+'</strong><small>'+esc(h.text)+'</small></article>'}).join("")}
+
+function seasonMatchesFilter(s,filter){
+  if(filter==="all") return true;
+  if(filter==="title") return Array.isArray(s.honours)&&s.honours.length>0;
+  if(filter==="asia") return s.continental&&s.continental!=="—";
+  if(filter==="modern") return parseInt(s.label,10)>=2010;
+  return true;
+}
+function renderSeasons(filter){
+  filter=filter||"all";
+  const list=seasons.filter(function(s){return seasonMatchesFilter(s,filter)}).slice().reverse();
+  document.getElementById("seasonArchiveMeta").textContent=list.length+" موسمًا";
+  document.getElementById("seasonArchive").innerHTML=list.map(function(s){
+    const badges=(s.honours||[]).concat(s.continental&&s.continental!=="—"?[s.continental]:[]).slice(0,3);
+    return '<button class="seasonArchiveCard" data-season="'+esc(s.id)+'"><div class="seasonArchiveTop"><div><small>'+esc(s.era)+'</small><h3>'+esc(s.label)+'</h3></div><span class="seasonStatus">'+esc(s.status)+'</span></div><p>'+esc(s.note)+'</p><div class="seasonBadges">'+badges.map(function(x){return '<span>'+esc(x)+'</span>'}).join("")+'</div></button>';
+  }).join("");
+}
+function openSeason(id){
+  const s=seasons.find(function(x){return x.id===id}); if(!s)return;
+  closeModal("playerModal");
+  const stars=(s.stars||[]).map(findPlayer).filter(Boolean);
+  const starHtml=stars.length?'<div class="seasonStars"><strong>نجوم هذا الموسم</strong><div class="starChips">'+stars.map(function(p){return '<button data-player="'+esc(p.id)+'">'+esc(p.name)+'</button>'}).join("")+'</div></div>':'';
+  const sourceHtml=(s.sources||[]).length?'<div class="seasonSources">'+s.sources.map(function(src,i){return '<a href="'+esc(src)+'" target="_blank" rel="noopener">المصدر '+(i+1)+' ↗</a>'}).join("")+'</div>':'';
+  document.getElementById("seasonDetail").innerHTML='<div class="seasonDetailHead"><small>'+esc(s.era)+' · '+esc(s.status)+'</small><h2>'+esc(s.label)+'</h2><p>'+esc(s.note)+'</p></div><div class="seasonDetailGrid"><div><b>'+esc(s.league)+'</b><small>الدوري</small></div><div><b>'+esc(s.continental)+'</b><small>آسيا / دولي</small></div><div><b>'+esc((s.honours||[]).join("، ")||"—")+'</b><small>البطولات</small></div><div><b>'+esc(s.leaguePosition)+'</b><small>المركز</small></div></div>'+starHtml+sourceHtml;
+  document.getElementById("seasonModal").classList.add("open");
+  document.getElementById("seasonModal").setAttribute("aria-hidden","false");
+}
 function renderSources(){
   const links=[["صفحة النصر في رابطة الدوري",SOURCES.splTeam],["المباريات والنتائج",SOURCES.splFixtures],["مركز إحصائيات الدوري",SOURCES.splStats],["سجل السوبر السعودي",SOURCES.saffSuper],["تاريخ النصر في الاتحاد الآسيوي",SOURCES.afcHistory],["سعوديبيديا: نادي النصر",SOURCES.saudipedia]];
   document.getElementById("sourceLinks").innerHTML=links.map(function(x){return '<a href="'+x[1]+'" target="_blank" rel="noopener">'+esc(x[0])+' ↗</a>'}).join("");
 }
 function renderAll(){
-  renderFeatured();renderSquad("all");renderTrophies();renderFixtures();renderLeaders();renderHistory();renderSources();
+  renderFeatured();renderSquad("all");renderTrophies();renderFixtures();renderLeaders();renderHistory();renderSeasons("all");renderSources();
 }
 function go(id){
   document.querySelectorAll(".screen").forEach(function(s){s.classList.toggle("active",s.id===id)});
-  document.querySelectorAll(".bottom button").forEach(function(b){b.classList.toggle("active",b.dataset.go===id)});
+  document.querySelectorAll(".bottom button").forEach(function(b){b.classList.toggle("active",b.dataset.go===id||(id==="season"&&b.dataset.go==="seasons"))});
   window.scrollTo({top:0,behavior:"smooth"});
 }
 function findPlayer(id){return players.concat(legends).find(function(p){return p.id===id})}
@@ -73,7 +100,9 @@ function openPlayer(id){
   const stats=isLegend
     ?'<div class="detailStats"><div><b>'+esc(p.tier)+'</b><small>التصنيف</small></div><div><b>'+esc(p.era||"—")+'</b><small>الحقبة</small></div><div><b>'+esc(p.position)+'</b><small>المركز</small></div></div>'
     :'<div class="detailStats"><div><b>'+stat(p.matches)+'</b><small>مباراة</small></div><div><b>'+stat(p.goals)+'</b><small>هدف</small></div><div><b>'+stat(p.assists)+'</b><small>صناعة</small></div></div>';
-  document.getElementById("playerDetail").innerHTML='<div class="detailTop"><div class="detailPhoto">'+photo+'</div><div class="detailText"><span class="pill dark">'+(isLegend?esc(p.tier):"#"+esc(p.no))+'</span><h2>'+esc(p.name)+'</h2><p>'+esc(p.position)+' · '+esc(p.nation)+'</p></div></div>'+stats+'<p class="detailNote">'+esc(p.note)+(isLegend?'<br><br>هذا القسم يفرّق بين «أسطورة»، «رمز تاريخي»، «جيل العالمية» و«نجم حقبة» حتى لا نضع كل اللاعبين في تصنيف واحد.':'<br><br>الأرقام المعروضة تخص دوري روشن 2026/27 عندما تتوفر بيانات موثقة. علامة — تعني أننا لم نثبت الرقم بعد، وليست صفرًا.')+'</p><a class="linkBtn" href="'+esc(p.source)+'" target="_blank" rel="noopener">فتح المصدر ↗</a>';
+  const career=seasons.filter(function(s){return (s.stars||[]).includes(p.id)});
+  const careerHtml=career.length?'<div class="seasonStars"><strong>في أرشيف المواسم</strong><div class="starChips">'+career.map(function(s){return '<button data-season="'+esc(s.id)+'">'+esc(s.label)+'</button>'}).join("")+'</div></div>':'';
+  document.getElementById("playerDetail").innerHTML='<div class="detailTop"><div class="detailPhoto">'+photo+'</div><div class="detailText"><span class="pill dark">'+(isLegend?esc(p.tier):"#"+esc(p.no))+'</span><h2>'+esc(p.name)+'</h2><p>'+esc(p.position)+' · '+esc(p.nation)+'</p></div></div>'+stats+'<p class="detailNote">'+esc(p.note)+(isLegend?'<br><br>هذا القسم يفرّق بين «أسطورة»، «رمز تاريخي»، «جيل العالمية» و«نجم حقبة» حتى لا نضع كل اللاعبين في تصنيف واحد.':'<br><br>الأرقام المعروضة تخص دوري روشن 2026/27 عندما تتوفر بيانات موثقة. علامة — تعني أننا لم نثبت الرقم بعد، وليست صفرًا.')+'</p>'+careerHtml+'<a class="linkBtn" href="'+esc(p.source)+'" target="_blank" rel="noopener">فتح المصدر ↗</a>';
   document.getElementById("playerModal").classList.add("open");
   document.getElementById("playerModal").setAttribute("aria-hidden","false");
 }
@@ -85,20 +114,24 @@ function search(term){
   trophies.forEach(function(t){const txt=[t.title,t.seasons,t.note].join(" ").toLowerCase();if(txt.includes(q))rows.push({type:"بطولة",title:t.title,desc:t.seasons})});
   history.forEach(function(h){const txt=[h.year,h.title,h.text].join(" ").toLowerCase();if(txt.includes(q))rows.push({type:"تاريخ",title:h.year+" · "+h.title,desc:h.text})});
   fixtures.forEach(function(f){const txt=[f.date,f.round,f.home,f.away,f.where].join(" ").toLowerCase();if(txt.includes(q))rows.push({type:"مباراة",title:f.home+" × "+f.away,desc:f.date+" · "+f.round})});
+  seasons.forEach(function(s){const txt=[s.label,s.era,s.league,s.continental,s.note,(s.honours||[]).join(" ")].join(" ").toLowerCase();if(txt.includes(q))rows.push({type:"موسم",title:s.label+" · "+s.era,desc:s.league,seasonId:s.id})});
   document.getElementById("searchCount").textContent=rows.length+" نتيجة";
-  document.getElementById("searchResults").innerHTML=rows.length?rows.map(function(r){return '<button class="searchRow" '+(r.id?'data-player="'+esc(r.id)+'"':'')+'><b>'+esc(r.title)+'</b><small>'+esc(r.type)+' · '+esc(r.desc)+'</small></button>'}).join(""):'<div class="empty">لم أجد نتيجة. جرّب اسم لاعب أو بطولة أو سنة.</div>';
+  document.getElementById("searchResults").innerHTML=rows.length?rows.map(function(r){return '<button class="searchRow" '+(r.id?'data-player="'+esc(r.id)+'"':(r.seasonId?'data-season="'+esc(r.seasonId)+'"':''))+'><b>'+esc(r.title)+'</b><small>'+esc(r.type)+' · '+esc(r.desc)+'</small></button>'}).join(""):'<div class="empty">لم أجد نتيجة. جرّب اسم لاعب أو بطولة أو سنة.</div>';
   go("search");
 }
 
 document.addEventListener("click",function(e){
   const nav=e.target.closest("[data-go]"); if(nav){go(nav.dataset.go);return}
-  const pl=e.target.closest("[data-player]"); if(pl){openPlayer(pl.dataset.player);return}
+  const pl=e.target.closest("[data-player]"); if(pl){closeModal("seasonModal");openPlayer(pl.dataset.player);return}
+  const sn=e.target.closest("[data-season]"); if(sn){openSeason(sn.dataset.season);return}
   if(e.target.closest("[data-close-modal]")){closeModal("playerModal");return}
+  if(e.target.closest("[data-close-season]")){closeModal("seasonModal");return}
   if(e.target.closest("[data-close-info]")){closeModal("infoModal");return}
 });
 document.getElementById("infoBtn").addEventListener("click",function(){document.getElementById("infoModal").classList.add("open");document.getElementById("infoModal").setAttribute("aria-hidden","false")});
 document.getElementById("q").addEventListener("input",function(){search(this.value)});
 document.getElementById("squadFilter").addEventListener("click",function(e){const b=e.target.closest("[data-filter]");if(!b)return;this.querySelectorAll("button").forEach(function(x){x.classList.toggle("active",x===b)});renderSquad(b.dataset.filter)});
+document.getElementById("seasonFilter").addEventListener("click",function(e){const b=e.target.closest("[data-season-filter]");if(!b)return;this.querySelectorAll("button").forEach(function(x){x.classList.toggle("active",x===b)});renderSeasons(b.dataset.seasonFilter)});
 
 loadData().catch(function(err){
   console.error(err);
