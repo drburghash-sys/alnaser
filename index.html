@@ -11,38 +11,129 @@
 </head>
 <body>
 <div class="app">
-<header class="hero">
-  <div class="brand"><div class="mark">N</div><div><h1>نصر هَب <span>NASSR HUB</span></h1><p>موسوعة جماهيرية لنادي النصر</p></div></div>
-  <label class="search">⌕ <input id="q" autocomplete="off" placeholder="ابحث عن لاعب، بطولة، موسم أو رقم..."></label>
+<header class="topbar">
+  <div class="brand">
+    <div class="mark">N</div>
+    <div><h1>نصر هَب <span>NASSR HUB</span></h1><p>موسوعة جماهيرية لنادي النصر</p></div>
+    <button class="iconBtn" id="infoBtn" aria-label="عن البيانات">ⓘ</button>
+  </div>
+  <label class="search"><span>⌕</span><input id="q" autocomplete="off" placeholder="ابحث عن لاعب، بطولة، سنة أو رقم..."></label>
 </header>
+
 <main>
 <section id="home" class="screen active">
   <article class="heroCard">
-    <small>نادي النصر السعودي</small><h2>العالمي في مكان واحد</h2>
-    <p>تاريخ النادي، البطولات، اللاعبون والإحصائيات في واجهة سريعة مناسبة للجوال.</p>
-    <div class="quick"><button data-go="players">اللاعبون</button><button data-go="trophies">البطولات</button><button data-go="stats">الإحصائيات</button><button data-go="history">التاريخ</button></div>
+    <div class="heroCopy">
+      <span class="pill dark">بطل دوري 2025/26</span>
+      <h2>العالمي، بصورة أعمق.</h2>
+      <p>اللاعبون، البطولات، الموسم الحالي، الأرقام والتاريخ في تطبيق واحد.</p>
+      <div class="heroActions"><button data-go="season">الموسم الحالي</button><button data-go="squad" class="ghost">التشكيلة</button></div>
+    </div>
+    <div class="crestWord">N</div>
   </article>
-  <section class="block"><div class="heading"><h3>استكشف</h3><span>اختر ما تريد</span></div><div class="tiles">
-    <button class="tile" data-go="players"><b>👥</b><strong>اللاعبون</strong><small>الحاليون والأساطير والمراكز</small></button>
-    <button class="tile" data-go="trophies"><b>🏆</b><strong>البطولات</strong><small>المسابقات والمواسم والتوثيق</small></button>
-    <button class="tile" data-go="stats"><b>📊</b><strong>الإحصائيات</strong><small>الفريق واللاعبون والأرقام القياسية</small></button>
-    <button class="tile" data-go="history"><b>🕰️</b><strong>التاريخ</strong><small>محطات النصر عبر السنين</small></button>
-  </div></section>
-  <section class="block"><div class="heading"><h3>نجوم بارزون</h3><span>اسحب للمزيد</span></div><div id="featured" class="horizontal"></div></section>
-  <section class="block"><div class="heading"><h3>أقسام سنضيفها</h3></div><div class="list">
-    <div class="row"><div><strong>المباريات والنتائج</strong><small>الجدول، النتائج، التشكيلة وملخص المباراة</small></div><em>قريبًا</em></div>
-    <div class="row"><div><strong>المقارنات</strong><small>مقارنة لاعبين أو موسمين جنبًا إلى جنب</small></div><em>قريبًا</em></div>
-    <div class="row"><div><strong>الأرقام القياسية</strong><small>الهدافون، الأكثر مشاركة، أكبر الانتصارات والسلاسل</small></div><em>قريبًا</em></div>
-  </div></section>
+
+  <section class="liveStrip">
+    <div><small>دوري روشن 2026/27</small><strong>المركز 3</strong></div>
+    <div><small>النقاط</small><strong>16</strong></div>
+    <div><small>لعب</small><strong>7</strong></div>
+    <div><small>فوز</small><strong>5</strong></div>
+  </section>
+
+  <section class="block">
+    <div class="heading"><div><small>القادم</small><h3>النصر × الدرعية</h3></div><span class="dateBadge">9 أكتوبر</span></div>
+    <div class="matchCard">
+      <div class="clubSide"><div class="clubBadge nassr">N</div><strong>النصر</strong></div>
+      <div class="versus"><b>VS</b><small>الجولة 8 · الأول بارك</small></div>
+      <div class="clubSide"><div class="clubBadge rival">د</div><strong>الدرعية</strong></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="heading"><div><small>أبرز لاعبي الموسم</small><h3>نجوم النصر</h3></div><button class="linkBtn" data-go="squad">عرض الجميع</button></div>
+    <div id="featured" class="horizontal"></div>
+  </section>
+
+  <section class="block">
+    <div class="heading"><div><small>الخزانة</small><h3>بطولات موثقة</h3></div><button class="linkBtn" data-go="trophies">التفاصيل</button></div>
+    <div class="trophySummary">
+      <div><b>9</b><span>الدوري السعودي</span></div>
+      <div><b>6</b><span>كأس الملك</span></div>
+      <div><b>2</b><span>السوبر السعودي</span></div>
+      <div><b>2</b><span>ألقاب آسيوية تاريخية</span></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="heading"><div><small>آخر تحديث</small><h3>6 أكتوبر 2026</h3></div></div>
+    <div class="sourceBox">البيانات الموسمية تتغير باستمرار. يعرض التطبيق تاريخ التحديث ومصدر كل مجموعة بيانات بدل ترك الأرقام القديمة تبدو وكأنها آنية.</div>
+  </section>
 </section>
-<section id="players" class="screen"><div class="heading page"><h3>اللاعبون</h3><span>قاعدة أولية</span></div><div id="playersList" class="list"></div></section>
-<section id="trophies" class="screen"><div class="heading page"><h3>خزانة البطولات</h3><span>تفصيل بدل رقم واحد مضلل</span></div><div id="trophyList" class="list"></div><p class="note">تنبيه توثيقي: تختلف بعض الإحصاءات التاريخية باختلاف طريقة احتساب المسابقات القديمة، لذلك يعرض التطبيق اسم البطولة والمواسم والمصدر عند إضافة قاعدة البيانات النهائية.</p></section>
-<section id="stats" class="screen"><div class="heading page"><h3>مركز الإحصائيات</h3><span>قابل للتحديث</span></div><div class="tiles statsTiles"><div class="tile"><b>⚽</b><strong>الأهداف</strong><small>حسب الموسم والبطولة</small></div><div class="tile"><b>🎯</b><strong>الصناعة</strong><small>تمريرات حاسمة وفرص</small></div><div class="tile"><b>🧤</b><strong>الحراسة</strong><small>شباك نظيفة وتصديات</small></div><div class="tile"><b>📈</b><strong>الفريق</strong><small>فوز وتعادل وخسارة</small></div></div><div class="list"><div class="row"><div><strong>فكرة مهمة</strong><small>الأرقام المتغيرة ستعرض معها «آخر تحديث» ومصدرها حتى لا تتحول إلى معلومات قديمة.</small></div></div></div></section>
-<section id="history" class="screen"><div class="heading page"><h3>تاريخ النصر</h3><span>خط زمني</span></div><div id="historyList" class="timeline"></div></section>
-<section id="search" class="screen"><div class="heading page"><h3>نتائج البحث</h3><span id="searchCount"></span></div><div id="searchResults" class="list"></div></section>
+
+<section id="squad" class="screen">
+  <div class="pageHead"><div><small>2026/27</small><h2>التشكيلة</h2></div><span>المدرب: أونج بوستيكوغلو</span></div>
+  <div class="segmented" id="squadFilter">
+    <button class="active" data-filter="all">الكل</button><button data-filter="GK">حراس</button><button data-filter="DF">دفاع</button><button data-filter="MF">وسط</button><button data-filter="FW">هجوم</button><button data-filter="legend">أساطير</button>
+  </div>
+  <div id="playersGrid" class="playersGrid"></div>
+</section>
+
+<section id="trophies" class="screen">
+  <div class="pageHead"><div><small>التاريخ الذهبي</small><h2>خزانة البطولات</h2></div><span>موثقة حسب المسابقة</span></div>
+  <div id="trophyList" class="trophyList"></div>
+  <div class="sourceBox warn">لا نستخدم رقمًا إجماليًا واحدًا للبطولات غير الموحّدة في طريقة الاحتساب. المعروض هنا بطولات ذات تعريف واضح ومصدر محدد.</div>
+</section>
+
+<section id="season" class="screen">
+  <div class="pageHead"><div><small>دوري روشن</small><h2>موسم 2026/27</h2></div><span>آخر تحديث 6 أكتوبر</span></div>
+  <div class="seasonHero">
+    <div class="rank"><small>المركز</small><b>3</b><span>16 نقطة</span></div>
+    <div class="seasonNumbers">
+      <div><b>7</b><small>لعب</small></div><div><b>5</b><small>فاز</small></div><div><b>1</b><small>تعادل</small></div><div><b>1</b><small>خسر</small></div><div><b>16</b><small>هدف</small></div>
+    </div>
+  </div>
+  <section class="block"><div class="heading"><div><small>الروزنامة</small><h3>المباريات القريبة</h3></div></div><div id="fixtures" class="fixtureList"></div></section>
+  <section class="block"><div class="heading"><div><small>إحصائيات فردية موثقة</small><h3>أبرز اللاعبين</h3></div></div><div id="statLeaders" class="leaderList"></div></section>
+  <section class="block"><div class="heading"><div><small>تحركات صيف 2026</small><h3>الانتقالات</h3></div></div><div class="transferGrid"><div><b>داخل</b><span>سامو كوستا</span><small>من ريال مايوركا</small></div><div><b>خارج</b><span>مارسيلو بروزوفيتش</span><small>لاعب حر</small></div><div><b>إعارة</b><span>جون دوران</span><small>إلى بنفيكا</small></div><div><b>إعارة</b><span>ويسلي</span><small>إلى كروزيرو</small></div></div></section>
+</section>
+
+<section id="history" class="screen">
+  <div class="pageHead"><div><small>من 1955</small><h2>تاريخ النصر</h2></div><span>محطات مختارة</span></div>
+  <div id="historyList" class="timeline"></div>
+</section>
+
+<section id="search" class="screen">
+  <div class="pageHead"><div><small>بحث شامل</small><h2>النتائج</h2></div><span id="searchCount"></span></div>
+  <div id="searchResults" class="searchResults"></div>
+</section>
 </main>
-<nav class="bottom"><button class="active" data-go="home"><b>⌂</b>الرئيسية</button><button data-go="players"><b>♙</b>اللاعبون</button><button data-go="trophies"><b>♛</b>البطولات</button><button data-go="stats"><b>▥</b>الإحصائيات</button><button data-go="history"><b>◷</b>التاريخ</button></nav>
+
+<nav class="bottom">
+  <button class="active" data-go="home"><b>⌂</b><span>الرئيسية</span></button>
+  <button data-go="squad"><b>♟</b><span>اللاعبون</span></button>
+  <button data-go="trophies"><b>♛</b><span>البطولات</span></button>
+  <button data-go="season"><b>▥</b><span>الموسم</span></button>
+  <button data-go="history"><b>◷</b><span>التاريخ</span></button>
+</nav>
 </div>
+
+<div class="modal" id="playerModal" aria-hidden="true">
+  <div class="modalShade" data-close-modal></div>
+  <article class="modalCard">
+    <button class="closeBtn" data-close-modal>×</button>
+    <div id="playerDetail"></div>
+  </article>
+</div>
+
+<div class="modal" id="infoModal" aria-hidden="true">
+  <div class="modalShade" data-close-info></div>
+  <article class="modalCard compact">
+    <button class="closeBtn" data-close-info>×</button>
+    <h3>عن البيانات</h3>
+    <p>يعتمد التطبيق حاليًا على بيانات رابطة الدوري السعودي للمحترفين، الاتحاد السعودي لكرة القدم، والاتحاد الآسيوي. بعض صفحات الرابطة تعرض حقولًا موسمية متأخرة أو غير متزامنة؛ لذلك لا نملأ أي رقم غير متحقق منه.</p>
+    <div id="sourceLinks" class="sourceLinks"></div>
+  </article>
+</div>
+
 <script src="app.js"></script>
 </body>
 </html>
