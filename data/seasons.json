@@ -1,12 +1,12 @@
 [
   {
-    "id": "1975-76",
-    "label": "1975/76",
-    "era": "البدايات الذهبية",
-    "league": "بطل الدوري بحسب دليل AFC 2020",
+    "id": "1974-75",
+    "label": "1974/75",
+    "era": "الدوري التصنيفي",
+    "league": "بطل الدوري التصنيفي",
     "leaguePosition": "بطل",
     "honours": [
-      "الدوري السعودي"
+      "الدوري التصنيفي"
     ],
     "continental": "—",
     "stars": [
@@ -14,11 +14,11 @@
       "nasser-johar",
       "salem-marwan"
     ],
-    "status": "خلاف توثيقي",
-    "note": "دليل AFC لعام 2020 يحتسب لقب 1976 ضمن ألقاب الدوري، بينما دليل AFC لعام 2019 لا يدرجه ضمن قائمة الثمانية حتى 2019.",
+    "status": "موثق بتصنيف مستقل",
+    "note": "فاز النصر بالدوري التصنيفي 1974/75، وهو بطولة انتقالية سبقت الانطلاقة المستمرة للدوري الممتاز. بعض المراجع الآسيوية تضمه إلى رصيد الدوري، وأخرى تفصله.",
     "sources": [
-      "https://assets.the-afc.com/migration/2/0/2020-afc-champions-league-group-stage-programme",
-      "https://assets.the-afc.com/migration/2/0/2019%20programme%20QF%20%28Japan%29.pdf"
+      "https://en.wikipedia.org/wiki/1974%E2%80%9375_Saudi_Categorization_League",
+      "https://assets.the-afc.com/migration/2/0/2020-afc-champions-league-group-stage-programme"
     ]
   },
   {
