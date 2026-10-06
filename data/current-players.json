@@ -20,12 +20,13 @@
     "pos": "GK",
     "position": "حارس مرمى",
     "nation": "السعودية",
-    "img": "https://media.zid.store/502314bf-8ec9-4016-b379-96b335ef94c9/0268f9a2-d5a8-49e3-9c50-57ecfc6385e8.png",
-    "matches": 3,
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/68d5e1728fcb46a5842e21a2f71fc949_middle.webp",
+    "matches": 2,
     "goals": 0,
     "assists": 0,
     "note": "حارس سعودي دولي. الصورة من متجر نادي النصر الرسمي.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "bento",
@@ -48,12 +49,13 @@
     "pos": "GK",
     "position": "حارس مرمى",
     "nation": "السعودية",
-    "img": "",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/473a9dafaa5b4a579265a9fc09ed8d15_middle.webp",
     "matches": 1,
     "goals": 0,
     "assists": 0,
     "note": "حارس شاب ضمن قائمة الفريق الأول.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "ghannam",
@@ -62,12 +64,13 @@
     "pos": "DF",
     "position": "ظهير أيمن",
     "nation": "السعودية",
-    "img": "https://media.zid.store/502314bf-8ec9-4016-b379-96b335ef94c9/f485ba4d-11d0-4193-8386-791c2c56492a.png",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/22dd901053df473ebf5b2a1ee5c469ed_middle.webp",
     "matches": 0,
     "goals": 0,
     "assists": 0,
     "note": "ظهير دولي سعودي. الصورة من متجر نادي النصر الرسمي.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "simakan",
@@ -90,12 +93,13 @@
     "pos": "DF",
     "position": "قلب دفاع",
     "nation": "السعودية",
-    "img": "",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/79ace8db1f5048c5b855a4a6671a1d27_middle.webp",
     "matches": 2,
     "goals": 0,
     "assists": 0,
     "note": "انضم للنصر في 2025.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "amri",
@@ -104,12 +108,13 @@
     "pos": "DF",
     "position": "قلب دفاع",
     "nation": "السعودية",
-    "img": "",
-    "matches": 7,
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/a7dc5b8a371d44c881a1f96772dc785e_middle.webp",
+    "matches": 6,
     "goals": 2,
     "assists": 0,
     "note": "مدافع دولي سعودي.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "saad-nasser",
@@ -118,12 +123,13 @@
     "pos": "DF",
     "position": "ظهير أيسر",
     "nation": "السعودية",
-    "img": "",
-    "matches": 5,
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/afd60a3baab34ef8b3043c5a561a190c_middle.webp",
+    "matches": 4,
     "goals": 0,
     "assists": 0,
     "note": "انضم للنصر قادمًا من التعاون.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "boushal",
@@ -132,12 +138,13 @@
     "pos": "DF",
     "position": "ظهير",
     "nation": "السعودية",
-    "img": "https://media.zid.store/502314bf-8ec9-4016-b379-96b335ef94c9/e4150efe-6df6-47be-b295-e1e64b38f748.png",
-    "matches": 8,
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/e4047186b52746a7a05959e88d3bd0e5_middle.webp",
+    "matches": 7,
     "goals": 0,
     "assists": 0,
     "note": "الصورة من متجر نادي النصر الرسمي.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "inigo",
@@ -165,7 +172,8 @@
     "goals": 0,
     "assists": 0,
     "note": "ضمن قائمة الفريق الأول.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "awad-aman",
@@ -188,12 +196,13 @@
     "pos": "DF",
     "position": "ظهير أيسر",
     "nation": "السعودية",
-    "img": "https://media.zid.store/502314bf-8ec9-4016-b379-96b335ef94c9/2352268d-0924-43d0-b212-9810d43132a4.png",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/7947fe24e89d4d729ba3c7234a0e8440_middle.webp",
     "matches": 6,
     "goals": 0,
     "assists": 1,
     "note": "الصورة من متجر نادي النصر الرسمي.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "asser-hawsawi",
@@ -244,12 +253,13 @@
     "pos": "MF",
     "position": "وسط",
     "nation": "السعودية",
-    "img": "",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/3fb80d23269a4377bc25810d5befd50a_middle.webp",
     "matches": 5,
     "goals": 0,
     "assists": 1,
     "note": "لاعب وسط سعودي.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "khaibari",
@@ -258,12 +268,13 @@
     "pos": "MF",
     "position": "وسط",
     "nation": "السعودية",
-    "img": "",
-    "matches": 8,
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/82b2a18304784116b67a1aa51391c7be_middle.webp",
+    "matches": 7,
     "goals": 0,
     "assists": 0,
     "note": "محور سعودي ضمن التشكيلة الحالية.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "rakan-ghamdi",
@@ -272,12 +283,13 @@
     "pos": "MF",
     "position": "وسط",
     "nation": "السعودية",
-    "img": "",
-    "matches": 1,
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/45d264017de84107b0b3fda007a5d41a_middle.webp",
+    "matches": 0,
     "goals": 0,
     "assists": 0,
     "note": "لاعب وسط شاب ضمن القائمة.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "ronaldo",
@@ -287,11 +299,12 @@
     "position": "مهاجم",
     "nation": "البرتغال",
     "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/2a3c905c404b4c7bb51c9d0f367415dc_middle.webp",
-    "matches": 7,
+    "matches": 6,
     "goals": 3,
     "assists": 0,
     "note": "قائد الفريق.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "hamdan",
@@ -300,12 +313,13 @@
     "pos": "FW",
     "position": "مهاجم",
     "nation": "السعودية",
-    "img": "",
-    "matches": 8,
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/bbe675edb06c4fadb62446d6c7e0d0a1_middle.webp",
+    "matches": 7,
     "goals": 2,
     "assists": 1,
     "note": "مهاجم سعودي ضمن الفريق الأول.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "mane",
@@ -315,11 +329,12 @@
     "position": "مهاجم/جناح",
     "nation": "السنغال",
     "img": "",
-    "matches": 8,
+    "matches": 7,
     "goals": 2,
     "assists": 2,
     "note": "عنصر هجومي رئيسي.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "marran",
@@ -328,12 +343,13 @@
     "pos": "FW",
     "position": "مهاجم",
     "nation": "السعودية",
-    "img": "https://media.zid.store/502314bf-8ec9-4016-b379-96b335ef94c9/92e5a608-9743-4726-ab92-918386f6c560.png",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/2296379c17a34c93abb1f143df769633_middle.webp",
     "matches": 1,
     "goals": 0,
     "assists": 0,
     "note": "الصورة من متجر نادي النصر الرسمي.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "angelo",
@@ -343,11 +359,12 @@
     "position": "جناح",
     "nation": "البرازيل",
     "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/e78c173e573346b29a4e560a27259557_middle.webp",
-    "matches": 8,
+    "matches": 7,
     "goals": 3,
     "assists": 2,
     "note": "جناح برازيلي شاب.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "coman",
@@ -361,7 +378,8 @@
     "goals": 0,
     "assists": 0,
     "note": "جناح فرنسي ضمن الفريق.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "yahya",
@@ -375,7 +393,8 @@
     "goals": 0,
     "assists": 1,
     "note": "الصورة من متجر نادي النصر الرسمي.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "ghareeb",
@@ -384,12 +403,13 @@
     "pos": "FW",
     "position": "جناح",
     "nation": "السعودية",
-    "img": "https://media.zid.store/502314bf-8ec9-4016-b379-96b335ef94c9/96d5fabe-ee70-403e-bc81-1e9cefe37709.png",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/fd3e047f05a74af4ab2205de3dd34fda_middle.webp",
     "matches": 0,
     "goals": 0,
     "assists": 0,
     "note": "ضمن لاعبي النادي في موسم 2026/27. الصورة من متجر النصر الرسمي.",
-    "source": "https://scoutingstats.ai/clubs/2506/al-nassr/squad?league_id=1085&season_id=28424"
+    "source": "https://scoutingstats.ai/clubs/2506/al-nassr/squad?league_id=1085&season_id=28424",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "haqawi",
@@ -398,12 +418,13 @@
     "pos": "FW",
     "position": "مهاجم",
     "nation": "السعودية",
-    "img": "",
+    "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/e4047186b52746a7a05959e88d3bd0e5_middle.webp",
     "matches": 0,
     "goals": 0,
     "assists": 0,
     "note": "مهاجم شاب ضمن قائمة الفريق.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   },
   {
     "id": "felix",
@@ -413,10 +434,11 @@
     "position": "مهاجم/وسط هجومي",
     "nation": "البرتغال",
     "img": "https://media-sdp.spl.com.sa/playerImages/47d9987fd5044e0dba6c6c1df7d6cfa8/3677a75aaa514e43b2840e7fa367c91d/94263b19841944c38cb20892b176c862/home/0ec8b22b893949ffac7926ea5f9ed7d6_middle.webp",
-    "matches": 7,
+    "matches": 6,
     "goals": 2,
     "assists": 2,
     "note": "أحد أبرز نجوم الفريق.",
-    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb"
+    "source": "https://www.goal.com/en-sa/team/al-nassr-fc/squad/57jcqe38hakh2hfit2zsogsb",
+    "statsSource": "Goal 2026/27 + SPL player profiles"
   }
 ]
