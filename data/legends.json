@@ -9,7 +9,10 @@
     "tier": "أسطورة",
     "era": "1977–1998",
     "note": "أيقونة النصر الأشهر؛ سجل 260 هدفًا للنصر بحسب الاتحاد الآسيوي.",
-    "source": "https://www.the-afc.com/en/more/news/asian_icons_majed_abdullah_saudi_arabia.html"
+    "source": "https://www.the-afc.com/en/more/news/asian_icons_majed_abdullah_saudi_arabia.html",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Majed_Abdullah_in_1984.jpg"
   },
   {
     "id": "abdali",
@@ -21,7 +24,10 @@
     "tier": "أسطورة",
     "era": "جيل التأسيس والبطولات الأولى",
     "note": "من الأسماء التي تضعها المصادر التاريخية بين أعظم لاعبي النصر.",
-    "source": "https://arriyadiyah.com/433916/"
+    "source": "https://arriyadiyah.com/433916/",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "danini",
@@ -33,7 +39,10 @@
     "tier": "أسطورة",
     "era": "الحقبة المبكرة",
     "note": "ضمن قائمة أهم عشرة لاعبين في تاريخ النصر خلال خمسين عامًا وفق صحيفة الرياضية.",
-    "source": "https://arriyadiyah.com/433916/"
+    "source": "https://arriyadiyah.com/433916/",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "saad-johar",
@@ -45,7 +54,10 @@
     "tier": "أسطورة",
     "era": "الحقبة المبكرة",
     "note": "من رموز النصر التاريخيين في قوائم المؤرخين.",
-    "source": "https://arriyadiyah.com/433916/"
+    "source": "https://arriyadiyah.com/433916/",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "nasser-johar",
@@ -57,7 +69,10 @@
     "tier": "أسطورة",
     "era": "الحقبة المبكرة",
     "note": "اسم نصراوي بارز لاعبًا ثم مدربًا.",
-    "source": "https://arriyadiyah.com/433916/"
+    "source": "https://arriyadiyah.com/433916/",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "khaled-turki",
@@ -69,7 +84,10 @@
     "tier": "أسطورة",
     "era": "الحقبة المبكرة",
     "note": "ضمن قائمة أهم عشرة لاعبين في تاريخ النصر خلال خمسين عامًا.",
-    "source": "https://arriyadiyah.com/433916/"
+    "source": "https://arriyadiyah.com/433916/",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "tawfiq-muqrin",
@@ -81,7 +99,10 @@
     "tier": "أسطورة",
     "era": "الحقبة المبكرة",
     "note": "من الأسماء التاريخية الكبرى في النصر.",
-    "source": "https://arriyadiyah.com/433916/"
+    "source": "https://arriyadiyah.com/433916/",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "salem-marwan",
@@ -93,7 +114,10 @@
     "tier": "أسطورة",
     "era": "السبعينات والثمانينات",
     "note": "أحد أبرز حراس النصر تاريخيًا.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "youssef-khamis",
@@ -105,7 +129,10 @@
     "tier": "أسطورة",
     "era": "الثمانينات",
     "note": "أحد أبرز لاعبي الوسط في تاريخ النادي.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": "https://alqiyady.awicdn.com/site-images/sites/default/files/alqiyady-prod/celebrity_profile/f/b/629018/75ae1c7f6c14f4c8c64c3da43f3b34b57b117018-050124081115.jpg?preset=v3.0_570X570"
   },
   {
     "id": "muhaysin",
@@ -117,7 +144,10 @@
     "tier": "أسطورة",
     "era": "الثمانينات والتسعينات",
     "note": "من أعمدة العصر الذهبي وشارك في مونديال الأندية 2000.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": "https://arriyadiyah.com//media/thumb/8c/63/1024_43788d0419.jpg"
   },
   {
     "id": "herafy",
@@ -129,7 +159,10 @@
     "tier": "أسطورة",
     "era": "1984–2000",
     "note": "من نجوم الوسط التاريخيين وشارك في مونديال الأندية 2000.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": "https://assets.goal.com/images/v3/bltdefbc60ce6187977/9a2864246ab1145856cff1905eaffd4623f5fbad.jpeg?auto=webp&format=pjpg&quality=60&width=1200"
   },
   {
     "id": "eid-saghir",
@@ -141,7 +174,10 @@
     "tier": "أسطورة",
     "era": "الحقبة التاريخية",
     "note": "اسم بارز في تاريخ هجوم النصر.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "mabrouk-turki",
@@ -153,7 +189,10 @@
     "tier": "رمز تاريخي",
     "era": "الحقبة التاريخية",
     "note": "من حراس النصر البارزين في ذاكرة النادي.",
-    "source": "https://arriyadiyah.com/434897/"
+    "source": "https://arriyadiyah.com/434897/",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "saleh-mutlaq",
@@ -165,7 +204,10 @@
     "tier": "رمز تاريخي",
     "era": "الثمانينات والتسعينات",
     "note": "من نجوم الوسط الذين زاملوا ماجد ومحيسن والهريفي.",
-    "source": "https://arriyadiyah.com/538641/"
+    "source": "https://arriyadiyah.com/538641/",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "hashim-surour",
@@ -177,7 +219,10 @@
     "tier": "رمز تاريخي",
     "era": "الحقبة التاريخية",
     "note": "من لاعبي النصر القدامى المعروفين.",
-    "source": "https://www.alriyadh.com/343467"
+    "source": "https://www.alriyadh.com/343467",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "darwish-saeed",
@@ -189,7 +234,10 @@
     "tier": "رمز تاريخي",
     "era": "الحقبة التاريخية",
     "note": "من لاعبي الزمن الجميل في النصر.",
-    "source": "https://www.alriyadh.com/1511993"
+    "source": "https://www.alriyadh.com/1511993",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "saud-abuhaidar",
@@ -201,7 +249,10 @@
     "tier": "رمز تاريخي",
     "era": "الحقبة التاريخية",
     "note": "من لاعبي الزمن الجميل في النصر.",
-    "source": "https://www.alriyadh.com/1511993"
+    "source": "https://www.alriyadh.com/1511993",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "mohammed-hadyan",
@@ -213,7 +264,10 @@
     "tier": "رمز تاريخي",
     "era": "الحقبة التاريخية",
     "note": "من لاعبي النصر القدامى الموثقين في ملتقى نجوم النادي.",
-    "source": "https://www.alriyadh.com/1511993"
+    "source": "https://www.alriyadh.com/1511993",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "fahad-masaud",
@@ -225,7 +279,10 @@
     "tier": "رمز تاريخي",
     "era": "الثمانينات والتسعينات",
     "note": "من نجوم النصر في جيل التسعينات.",
-    "source": "https://arriyadiyah.com/538641/"
+    "source": "https://arriyadiyah.com/538641/",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "fouad-anwar",
@@ -237,7 +294,10 @@
     "tier": "جيل العالمية",
     "era": "2000",
     "note": "من أبرز لاعبي مشاركة النصر التاريخية في كأس العالم للأندية 2000 وسجل أمام الرجاء.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "fahad-mehallel",
@@ -249,7 +309,10 @@
     "tier": "جيل العالمية",
     "era": "2000",
     "note": "ضمن قائمة النصر في كأس العالم للأندية 2000.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "fahad-ghashayan",
@@ -261,7 +324,10 @@
     "tier": "جيل العالمية",
     "era": "2000",
     "note": "من لاعبي النصر في المشاركة العالمية التاريخية.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "khojali",
@@ -273,7 +339,10 @@
     "tier": "جيل العالمية",
     "era": "2000",
     "note": "من حراس النصر في كأس العالم للأندية 2000.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "shoueia",
@@ -285,7 +354,10 @@
     "tier": "جيل العالمية",
     "era": "2000",
     "note": "مدافع شارك ضمن جيل العالمية.",
-    "source": "https://www.alriyadh.com/699281"
+    "source": "https://www.alriyadh.com/699281",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "ibrahim-mater",
@@ -297,7 +369,10 @@
     "tier": "جيل العالمية",
     "era": "2000",
     "note": "ضمن قائمة النصر في بطولة العالم للأندية 2000.",
-    "source": "https://www.marefa.org/نادي_النصر_السعودي"
+    "source": "https://www.marefa.org/نادي_النصر_السعودي",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "ahmed-bahja",
@@ -309,7 +384,10 @@
     "tier": "جيل العالمية",
     "era": "2000",
     "note": "المهاجم المغربي سجل للنصر أمام الرجاء في كأس العالم للأندية 2000.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "moussa-saib",
@@ -321,7 +399,10 @@
     "tier": "جيل العالمية",
     "era": "2000",
     "note": "النجم الجزائري كان من أصحاب الخبرة في جيل العالمية وسجل أمام الرجاء.",
-    "source": "https://www.alriyadh.com/699281"
+    "source": "https://www.alriyadh.com/699281",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "stoichkov",
@@ -333,7 +414,10 @@
     "tier": "نجم عالمي سابق",
     "era": "1998",
     "note": "النجم البلغاري الشهير مثّل النصر في مرحلة تاريخية قصيرة ومميزة.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "denilson",
@@ -345,7 +429,10 @@
     "tier": "نجم عالمي سابق",
     "era": "2006–2007",
     "note": "النجم البرازيلي بطل العالم مثّل النصر في مسيرته.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "hussein-abdulghani",
@@ -357,7 +444,10 @@
     "tier": "نجم تاريخي",
     "era": "2009–2017",
     "note": "قائد سابق للنصر ومن أبرز لاعبي حقبة العودة للبطولات.",
-    "source": "https://ar.wikipedia.org/wiki/نادي_النصر_(السعودية)"
+    "source": "https://ar.wikipedia.org/wiki/نادي_النصر_(السعودية)",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": "https://assets.goal.com/images/v3/bltc768c251319fd5cc/ff4f410ae8429f88e3f1b2088ef4e3a1dd3b0665.gif?upscale=true&width=600"
   },
   {
     "id": "saad-harthi",
@@ -369,7 +459,10 @@
     "tier": "نجم تاريخي",
     "era": "2004–2011",
     "note": "من أبرز مهاجمي النصر السعوديين في جيله.",
-    "source": "https://ar.wikipedia.org/wiki/نادي_النصر_(السعودية)"
+    "source": "https://ar.wikipedia.org/wiki/نادي_النصر_(السعودية)",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "abdulrahman-bishi",
@@ -381,7 +474,10 @@
     "tier": "نجم تاريخي",
     "era": "الألفينات",
     "note": "من المهاجمين البارزين الذين مثّلوا النصر.",
-    "source": "https://ar.wikipedia.org/wiki/نادي_النصر_(السعودية)"
+    "source": "https://ar.wikipedia.org/wiki/نادي_النصر_(السعودية)",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "badr-haqbani",
@@ -393,7 +489,10 @@
     "tier": "نجم تاريخي",
     "era": "الألفينات",
     "note": "من لاعبي الوسط المعروفين في حقبة الألفينات.",
-    "source": "https://ar.wikipedia.org/wiki/نادي_النصر_(السعودية)"
+    "source": "https://ar.wikipedia.org/wiki/نادي_النصر_(السعودية)",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "sahlawi",
@@ -405,7 +504,10 @@
     "tier": "نجم تاريخي",
     "era": "2009–2019",
     "note": "كان صاحب الرقم القياسي لأهداف النصر في دوري المحترفين قبل أن يتجاوزه رونالدو في 2026.",
-    "source": "https://www.spl.com.sa/ar/news/رونالدو-ينفرد-بلقب-الهداف-التاريخي-للنصر"
+    "source": "https://www.spl.com.sa/ar/news/رونالدو-ينفرد-بلقب-الهداف-التاريخي-للنصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": "https://pbs.twimg.com/media/B0zjBP1CIAAlHyO.jpg"
   },
   {
     "id": "hamdallah",
@@ -417,7 +519,10 @@
     "tier": "نجم حقبة المحترفين",
     "era": "2018–2021",
     "note": "هداف استثنائي في حقبة دوري المحترفين وقاد هجوم النصر في موسم التتويج 2018/19.",
-    "source": "https://www.spl.com.sa/en/teams/al-nassr/index"
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/index",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "amrabat",
@@ -429,7 +534,10 @@
     "tier": "نجم حقبة المحترفين",
     "era": "2018–2021",
     "note": "جناح مؤثر في فريق بطل دوري 2018/19.",
-    "source": "https://www.spl.com.sa/en/teams/al-nassr/index"
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/index",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "petros",
@@ -441,7 +549,10 @@
     "tier": "نجم حقبة المحترفين",
     "era": "2018–2021",
     "note": "أحد ركائز وسط النصر في حقبة التتويج بالدوري والسوبر.",
-    "source": "https://www.spl.com.sa/en/teams/al-nassr/index"
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/index",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "giuliano",
@@ -453,7 +564,10 @@
     "tier": "نجم حقبة المحترفين",
     "era": "2018–2020",
     "note": "من نجوم فريق الدوري 2018/19.",
-    "source": "https://www.spl.com.sa/en/teams/al-nassr/index"
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/index",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "omar-hawsawi",
@@ -465,7 +579,10 @@
     "tier": "نجم حقبة المحترفين",
     "era": "2011–2020",
     "note": "قلب دفاع وقائد سابق شارك في بطولات الدوري المتتالية وفي لقب 2018/19.",
-    "source": "https://www.spl.com.sa/en/teams/al-nassr/index"
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/index",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "abdullah-enezi",
@@ -477,7 +594,10 @@
     "tier": "نجم حقبة المحترفين",
     "era": "2010–2018",
     "note": "حارس بارز في حقبة بطولتي الدوري 2013/14 و2014/15.",
-    "source": "https://www.spl.com.sa/en/teams/al-nassr/index"
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/index",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "talisca",
@@ -489,7 +609,10 @@
     "tier": "نجم حديث",
     "era": "2021–2025",
     "note": "من أبرز هدافي النصر الأجانب في الحقبة الحديثة.",
-    "source": "https://www.spl.com.sa/en/teams/al-nassr/index"
+    "source": "https://www.spl.com.sa/en/teams/al-nassr/index",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "brozovic",
@@ -501,7 +624,10 @@
     "tier": "نجم حديث",
     "era": "2023–2026",
     "note": "لاعب وسط دولي بارز مثّل النصر في الحقبة الحديثة.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   },
   {
     "id": "otavio",
@@ -513,6 +639,9 @@
     "tier": "نجم حديث",
     "era": "2023–2025",
     "note": "من أبرز لاعبي الوسط الأجانب الذين مثلوا النصر حديثًا.",
-    "source": "https://saudipedia.com/نادي-النصر"
+    "source": "https://saudipedia.com/نادي-النصر",
+    "assists": null,
+    "assistStatus": "غير موثق تاريخيًا",
+    "img": ""
   }
 ]
