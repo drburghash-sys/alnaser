@@ -1,7 +1,7 @@
-const CACHE="alnaser-hub-v11";
+const CACHE="alnaser-hub-v12";
 const ASSETS=[
-  "./","./index.html","./style.css","./app.js","./manifest.webmanifest",
-  "./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png",
+  "./","./index.html","./style.css","./app.js","./manifest.webmanifest?v=12",
+  "./icons/icon-192.png?v=12","./icons/icon-512.png?v=12","./icons/icon-maskable-512.png?v=12",
   "./data/current-players.json","./data/legends.json","./data/historical-foreigners.json",
   "./data/trophies.json","./data/source-policy.json","./data/fixtures.json",
   "./data/history.json","./data/seasons.json"
@@ -11,5 +11,5 @@ self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise
 self.addEventListener("fetch",e=>{
   const u=new URL(e.request.url);
   if(u.origin!==location.origin){e.respondWith(fetch(e.request).catch(()=>new Response("",{status:504})));return;}
-  e.respondWith(fetch(e.request).then(r=>{const c=r.clone();caches.open(CACHE).then(cache=>cache.put(e.request,c));return r}).catch(()=>caches.match(e.request)));
+  e.respondWith(fetch(e.request,{cache:"no-store"}).then(r=>{const c=r.clone();caches.open(CACHE).then(cache=>cache.put(e.request,c));return r}).catch(()=>caches.match(e.request)));
 });
