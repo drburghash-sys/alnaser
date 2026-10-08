@@ -1,8 +1,8 @@
 {
-  "id":"./",
+  "id":"./?install=nassr-hub-v2",
   "name":"نصر هَب - NASSR HUB",
   "short_name":"نصر هَب",
-  "start_url":"./",
+  "start_url":"./?install=nassr-hub-v2",
   "scope":"./",
   "display":"standalone",
   "display_override":["standalone","minimal-ui"],
@@ -11,8 +11,8 @@
   "lang":"ar",
   "dir":"rtl",
   "icons":[
-    {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
-    {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
-    {"src":"icons/icon-maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+    {"src":"icons/icon-192.png?v=12","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"icons/icon-512.png?v=12","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"icons/icon-maskable-512.png?v=12","sizes":"512x512","type":"image/png","purpose":"maskable"}
   ]
 }
