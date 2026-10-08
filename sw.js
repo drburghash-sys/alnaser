@@ -1,7 +1,7 @@
-const CACHE="alnaser-hub-v12";
+const CACHE="alnaser-hub-v13";
 const ASSETS=[
-  "./","./index.html","./style.css","./app.js","./manifest.webmanifest?v=12",
-  "./icons/icon-192.png?v=12","./icons/icon-512.png?v=12","./icons/icon-maskable-512.png?v=12",
+  "./","./index.html","./style.css","./app.js","./manifest-v2.webmanifest?v=13",
+  "./icons/icon-192.png?v=13","./icons/icon-512.png?v=13","./icons/icon-maskable-512.png?v=13",
   "./data/current-players.json","./data/legends.json","./data/historical-foreigners.json",
   "./data/trophies.json","./data/source-policy.json","./data/fixtures.json",
   "./data/history.json","./data/seasons.json"
